@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.hotelmanagement.HomePageController">
+   <children>
+      <AnchorPane prefHeight="105.0" prefWidth="1000.0" style="-fx-background-color: #555555;" AnchorPane.bottomAnchor="700.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="127.0" layoutY="26.0" text="HospitalityHub" textFill="#ffdb58">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="logout" fitHeight="60.0" fitWidth="60.0" layoutX="899.0" layoutY="20.0" onMouseClicked="#handleLogout" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@res/icons/1b6fad8179462d6ae2bd5605ed5d5090-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="728.0" layoutY="17.0" prefHeight="66.0" prefWidth="153.0" style="-fx-background-color: #555555;">
+               <children>
+                  <ImageView fitHeight="44.0" fitWidth="53.0" layoutX="32.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@res/icons/admin_panel_settings_FILL0_wght700_GRAD0_opsz24.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="adminName" layoutX="94.0" layoutY="20.0" text="Admin" textFill="#ffdb58">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="96.8" prefHeight="130.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Button fx:id="room" alignment="BASELINE_LEFT" layoutX="200.0" mnemonicParsing="false" onAction="#createRoom" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" text="Rooms">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="77.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@res/icons/images.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="checkin" alignment="BASELINE_LEFT" layoutX="400.0" mnemonicParsing="false" onAction="#createCheckIn" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" text="Clients">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="77.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@res/icons/client-5252.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="checkout" alignment="BASELINE_LEFT" layoutX="600.0" mnemonicParsing="false" onAction="#createCheckOut" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" text="Employee">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="77.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@res/icons/employee.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="bill" alignment="BASELINE_LEFT" layoutX="800.0" mnemonicParsing="false" onAction="#createCustomerBill" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" text="Bill">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="77.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@res/icons/Screenshot_2024-01-09_005857-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="dash" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#createDash" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" text="Dashboard">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="77.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@res/icons/dashboard.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="holdPane" layoutY="200.0" prefHeight="569.0" prefWidth="1000.0" styleClass="background" stylesheets="@res/icons/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0" />
+   </children>
+</AnchorPane>

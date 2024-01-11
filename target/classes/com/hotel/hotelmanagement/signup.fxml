@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="967.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.hotelmanagement.SignUpController">
+   <children>
+      <TextField fx:id="name" layoutX="114.0" layoutY="154.0" prefHeight="25.0" prefWidth="287.0" promptText="Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="username" layoutX="114.0" layoutY="234.0" prefHeight="25.0" prefWidth="287.0" promptText="Username">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="password" layoutX="113.0" layoutY="314.0" prefHeight="25.0" prefWidth="287.0" promptText="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="answer" layoutX="114.0" layoutY="467.0" prefHeight="25.0" prefWidth="287.0" promptText="Enter your answer">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <RadioButton fx:id="male" layoutX="98.0" layoutY="636.0" mnemonicParsing="false" text="Male">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="female" layoutX="315.0" layoutY="636.0" mnemonicParsing="false" text="Female">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="address" layoutX="114.0" layoutY="550.0" prefHeight="25.0" prefWidth="287.0" promptText="Enter your address">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="73.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@res/icons/person_FILL0_wght400_GRAD0_opsz24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="73.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@res/icons/key_FILL0_wght400_GRAD0_opsz24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="73.0" layoutY="553.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@res/icons/pin_drop_FILL0_wght400_GRAD0_opsz24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="73.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@res/icons/help_FILL0_wght400_GRAD0_opsz24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="73.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@res/icons/forward_FILL0_wght400_GRAD0_opsz24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="73.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@res/icons/badge_FILL0_wght400_GRAD0_opsz24.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="signup" layoutX="111.0" layoutY="718.0" mnemonicParsing="false" onAction="#handleSignupAction" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: #bdb526;" text="Inscription" textFill="WHITE" />
+      <Button fx:id="login" layoutX="268.0" layoutY="718.0" mnemonicParsing="false" onAction="#handleLoginButton" prefHeight="25.0" prefWidth="133.0" style="-fx-border-color: #bdb526;" text="Connexion" textFill="#bdb526" />
+      <ComboBox fx:id="question" layoutX="113.0" layoutY="393.0" prefHeight="25.0" prefWidth="287.0" promptText="choose your security question" />
+      <Label layoutX="176.0" layoutY="58.0" text="Sign-Up" textFill="#bdb526">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="836.0" fitWidth="470.0" layoutX="498.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@res/icons/login.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
