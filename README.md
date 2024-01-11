@@ -23,4 +23,4 @@ The Java Hotel Management Project is a robust application designed to streamline
 
 ## Employee: ![Screenshot 2024-01-11 214300](https://github.com/mouad-ou/Hotel-Management-System/assets/79291830/2d27108a-7844-4688-a14e-ab7bbc72cd7b)
 
-## Bills![Screenshot 2024-01-11 214303](https://github.com/mouad-ou/Hotel-Management-System/assets/79291830/f3a8c47e-0ebd-4d6e-a747-e62405247974)
+## Bills: ![Screenshot 2024-01-11 221708](https://github.com/mouad-ou/Hotel-Management-System/assets/79291830/62d26993-c010-40ee-a540-20841518737b)
